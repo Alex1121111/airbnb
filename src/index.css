@@ -81,3 +81,11 @@ max-width: 150px;
 .section{
   display: flex;
 }
+.sellerInfo{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.star img{
+  margin-right: 2px;
+}
