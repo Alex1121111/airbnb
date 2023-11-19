@@ -27,6 +27,7 @@ max-width: 150px;
 
 }
 
+
 .info h1{
   font-size: 70px;
   font-weight: 600;
@@ -38,4 +39,45 @@ max-width: 150px;
   padding: 10px 0 0 36px;
   font-size: 30px;
   font-weight: 300;
+}
+
+.card{
+  max-width: fit-content;
+  max-height: fit-content;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.star{
+  display: flex;
+}
+
+.rating{
+  font-size: 18px;
+  font-weight: 100;
+}
+.ratinginfo{
+  font-size: 18px;
+  font-weight: 100;
+  color: #918E9B;
+  margin-left: 5px;
+  
+}
+
+.price{
+  display: flex;
+}
+
+.pricep{
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.pool img{
+  width: 230px;
+}
+
+.section{
+  display: flex;
 }
