@@ -80,6 +80,7 @@ max-width: 150px;
 
 .section{
   display: flex;
+  overflow: scroll;
 }
 .sellerInfo{
   margin-top: 5px;

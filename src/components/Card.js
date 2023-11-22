@@ -1,15 +1,13 @@
 import React from 'react'
-import star from '../images/star.svg'
 
 export default function Card({img, rating, numRatings, name, price}){
-
     return(
         <div className='card'>
             <div className = 'pool'>
             <img src = {img}/>
             </div>
             <div className = 'star'>
-            <img src ={star}/>
+            <img src ={process.env.PUBLIC_URL + '/images/star.svg'}/>
             <p className='rating'>{rating}</p>
             <p className='ratinginfo'> ({numRatings})·USA</p>
             </div>

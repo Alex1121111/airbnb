@@ -1,10 +1,9 @@
 import React from 'react'
-import airbnblogo from '../images/airbnblogo.svg'
 
 export default function Nav(){
     return(
         <nav>
-            <img src = {airbnblogo} className='bnblogo'/>
+            <img src = {process.env.PUBLIC_URL + '/images/airbnblogo.svg'} className='bnblogo'/>
         </nav>
     )
 }
