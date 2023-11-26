@@ -6,12 +6,9 @@ export default function Section(){
         d => 
         {
             return  (<Card 
-            img = {d.img}
-            name = {d.name}
-            price = {d.price}
-            country = {d.country}
-            numRatings = {d.numRatings}
-            rating = {d.rating}/>
+            key = {d.id}
+            {...d}
+            />
     )}
     )
     return(
@@ -20,3 +17,12 @@ export default function Section(){
         </div>
     )
 }
+
+//              location = {d.location}
+//             spots = {d.openSpots}
+//             img = {d.img}
+//             name = {d.name}
+//             price = {d.price}
+//             country = {d.country}
+//             numRatings = {d.numRatings}
+//             rating = {d.rating}

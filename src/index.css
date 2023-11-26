@@ -44,6 +44,7 @@ max-width: 150px;
 .card{
   max-width: fit-content;
   max-height: fit-content;
+  position: relative;
   font-family: 'Poppins', sans-serif;
   margin-top: 20px;
   margin-left: 40px;
@@ -89,4 +90,20 @@ max-width: 150px;
 
 .star img{
   margin-right: 2px;
+}
+
+.card-child{
+  max-width: fit-content;
+  max-height: fit-content;
+  font-family: 'Poppins', sans-serif;
+}
+.card-badge {
+  z-index: 9; /* Updated z-index to ensure it's on top of the card */
+  position: absolute; /* Position absolute to place it anywhere within the card */
+  top: 10px; /* Adjusted top position for better placement */
+  left: 10px; /* Adjusted right position for better placement */
+  background-color: white; /* Add background color for visibility */
+  color: black; /* Text color for visibility */
+  padding: 5px; /* Added padding for better styling */
+  font-weight: bold;
 }

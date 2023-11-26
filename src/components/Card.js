@@ -1,6 +1,13 @@
 import React from 'react'
 
-export default function Card({img, rating, numRatings, name, price}){
+export default function Card({location, openSpots, img, rating, numRatings, name, price}){
+    let cardStatus;
+    if (openSpots === '0'){
+        cardStatus = "SOLD OUT"
+    }
+    else if (location === "ONLINE"){
+        cardStatus = "ONLINE"
+    }
     return(
         <div className='card'>
             <div className = 'pool'>
@@ -15,7 +22,9 @@ export default function Card({img, rating, numRatings, name, price}){
             <div className='price'>
             <p className='pricep'>From ${price} </p><p> / person</p>
             </div>
+            { cardStatus && <div className = "card-badge">{cardStatus}</div> }
         </div>
+        
     )
     
 }
